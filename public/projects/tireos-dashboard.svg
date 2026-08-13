@@ -1,22 +1,61 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F1F26"/>
+      <stop offset="100%" stop-color="#18181B"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
   <rect width="1200" height="800" fill="#09090B"/>
-  <rect x="40" y="40" width="1120" height="80" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="70" y="90" fill="#FAFAFA" font-family="sans-serif" font-size="24" font-weight="600">TireOS</text>
-  <rect x="40" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="65" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Revenue</text>
-  <text x="65" y="230" fill="#3B82F6" font-family="sans-serif" font-size="32" font-weight="700">$48,210</text>
-  <rect x="330" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="355" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Appointments</text>
-  <text x="355" y="230" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="700">86</text>
-  <rect x="620" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="645" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Inventory</text>
-  <text x="645" y="230" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="700">1,204</text>
-  <rect x="910" y="140" width="250" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="935" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Profit</text>
-  <text x="935" y="230" fill="#22C55E" font-family="sans-serif" font-size="32" font-weight="700">$12,860</text>
-  <rect x="40" y="310" width="1120" height="260" rx="12" fill="#18181B" stroke="#27272A"/>
-  <text x="65" y="345" fill="#A1A1AA" font-family="sans-serif" font-size="14">AI Insights</text>
-  <text x="65" y="380" fill="#FAFAFA" font-family="sans-serif" font-size="16">3 customers are due for tire rotation this week</text>
-  <text x="65" y="410" fill="#FAFAFA" font-family="sans-serif" font-size="16">Brand X tires trending 18% above forecast — reorder suggested</text>
-  <text x="65" y="440" fill="#FAFAFA" font-family="sans-serif" font-size="16">Saturday appointments 92% booked</text>
+
+  <rect x="40" y="40" width="1120" height="56" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <circle cx="66" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="86" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="106" cy="68" r="5" fill="#3F3F46"/>
+  <text x="600" y="73" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="16" font-weight="600">TireOS</text>
+
+  <rect x="40" y="112" width="270" height="150" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <text x="65" y="150" fill="#A1A1AA" font-family="sans-serif" font-size="13">Revenue</text>
+  <text x="65" y="188" fill="#60A5FA" font-family="sans-serif" font-size="30" font-weight="700">$48,210</text>
+  <rect x="65" y="230" width="8" height="16" fill="url(#barGrad)" rx="2"/>
+  <rect x="80" y="220" width="8" height="26" fill="url(#barGrad)" rx="2"/>
+  <rect x="95" y="210" width="8" height="36" fill="url(#barGrad)" rx="2"/>
+  <rect x="110" y="216" width="8" height="30" fill="url(#barGrad)" rx="2"/>
+  <rect x="125" y="200" width="8" height="46" fill="url(#barGrad)" rx="2"/>
+  <rect x="140" y="192" width="8" height="54" fill="url(#barGrad)" rx="2"/>
+
+  <rect x="330" y="112" width="270" height="150" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <text x="355" y="150" fill="#A1A1AA" font-family="sans-serif" font-size="13">Appointments</text>
+  <text x="355" y="188" fill="#FAFAFA" font-family="sans-serif" font-size="30" font-weight="700">86</text>
+  <text x="355" y="230" fill="#71717A" font-family="sans-serif" font-size="13">92% booked this week</text>
+
+  <rect x="620" y="112" width="270" height="150" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <text x="645" y="150" fill="#A1A1AA" font-family="sans-serif" font-size="13">Inventory</text>
+  <text x="645" y="188" fill="#FAFAFA" font-family="sans-serif" font-size="30" font-weight="700">1,204</text>
+  <text x="645" y="230" fill="#71717A" font-family="sans-serif" font-size="13">units across 3 locations</text>
+
+  <rect x="910" y="112" width="250" height="150" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <text x="935" y="150" fill="#A1A1AA" font-family="sans-serif" font-size="13">Profit</text>
+  <text x="935" y="188" fill="#4ADE80" font-family="sans-serif" font-size="30" font-weight="700">$12,860</text>
+  <text x="935" y="230" fill="#71717A" font-family="sans-serif" font-size="13">+8% vs last month</text>
+
+  <rect x="40" y="282" width="1120" height="280" rx="12" fill="url(#cardGrad)" stroke="#27272A"/>
+  <text x="65" y="318" fill="#A1A1AA" font-family="sans-serif" font-size="13">AI Insights</text>
+
+  <circle cx="70" cy="352" r="4" fill="#60A5FA"/>
+  <text x="86" y="357" fill="#FAFAFA" font-family="sans-serif" font-size="16">3 customers are due for tire rotation this week</text>
+
+  <circle cx="70" cy="392" r="4" fill="#FBBF24"/>
+  <text x="86" y="397" fill="#FAFAFA" font-family="sans-serif" font-size="16">Brand X tires trending 18% above forecast — reorder suggested</text>
+
+  <circle cx="70" cy="432" r="4" fill="#4ADE80"/>
+  <text x="86" y="437" fill="#FAFAFA" font-family="sans-serif" font-size="16">Saturday appointments 92% booked</text>
+
+  <circle cx="80" cy="500" r="14" fill="#27272A" stroke="#3F3F46"/>
+  <circle cx="104" cy="500" r="14" fill="#27272A" stroke="#3F3F46"/>
+  <circle cx="128" cy="500" r="14" fill="#27272A" stroke="#3F3F46"/>
+  <text x="152" y="505" fill="#71717A" font-family="sans-serif" font-size="13">+ 214 active customers</text>
 </svg>

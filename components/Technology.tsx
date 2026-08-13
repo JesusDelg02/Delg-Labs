@@ -9,17 +9,20 @@ export function Technology() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
       <h2 className="text-3xl font-semibold sm:text-4xl">Technology</h2>
-      <div className="mt-10 grid gap-8 sm:grid-cols-4">
+      <div className="mt-10 flex flex-col divide-y divide-border overflow-hidden rounded-2xl border border-border sm:flex-row sm:divide-x sm:divide-y-0">
         {groups.map((group) => (
-          <div key={group.label}>
+          <div key={group.label} className="flex-1 p-6">
             <p className="text-xs font-medium uppercase tracking-widest text-accent">{group.label}</p>
-            <ul className="mt-3 space-y-1.5">
+            <div className="mt-3 flex flex-wrap gap-2">
               {group.items.map((item) => (
-                <li key={item} className="text-sm text-muted-foreground">
+                <span
+                  key={item}
+                  className="rounded-full border border-border bg-card px-2.5 py-1 text-xs text-muted-foreground"
+                >
                   {item}
-                </li>
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         ))}
       </div>
