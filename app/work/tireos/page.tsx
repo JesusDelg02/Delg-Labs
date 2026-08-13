@@ -17,8 +17,17 @@ export default function TireOSPage() {
   const project = getProjectBySlug('tireos')
   if (!project) notFound()
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: project.title,
+    description: project.description,
+    creator: { '@type': 'Person', name: 'Delg Labs' },
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <CaseStudyHero project={project} />
       <CaseStudySection title="Project overview">
         <p>{project.description}</p>
