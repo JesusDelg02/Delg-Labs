@@ -18,7 +18,7 @@ export function ProjectCard({ project }: { project: Project }) {
           Featured Project
         </span>
       )}
-      {project.status === 'coming-soon' && (
+      {isComingSoon && (
         <span className="absolute right-4 top-4 z-10 rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
           Coming Soon
         </span>
