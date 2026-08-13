@@ -46,8 +46,8 @@ export const projects: Project[] = [
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP'],
     featured: false,
     status: 'live',
-    image: '/projects/jszuss-hero.png',
-    gallery: ['/projects/jszuss-hero.png', '/projects/jszuss-mobile.png'],
+    image: 'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjszuss.netlify.app%2F?w=800',
+    gallery: [],
     challenge:
       'A web-design studio\'s own website is a credibility test — it has to prove the studio can build the exact kind of high-end, technically ambitious site it sells to clients.',
     solution:

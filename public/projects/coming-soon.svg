@@ -1,0 +1,6 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#09090B"/>
+  <rect x="40" y="40" width="1120" height="720" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="600" y="380" text-anchor="middle" fill="#A1A1AA" font-family="sans-serif" font-size="28" font-weight="600">AI Business Automation</text>
+  <text x="600" y="420" text-anchor="middle" fill="#71717A" font-family="sans-serif" font-size="18">Coming soon</text>
+</svg>
