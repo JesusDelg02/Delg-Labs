@@ -6,11 +6,11 @@ import { Menu, X } from 'lucide-react'
 import { useReducedMotion } from '@/hooks/use-reduced-motion'
 
 const links = [
-  { href: '#work', label: 'Work' },
-  { href: '#services', label: 'Services' },
-  { href: '#about', label: 'About' },
-  { href: '#process', label: 'Process' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#work', label: 'Work' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#about', label: 'About' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#contact', label: 'Contact' },
 ]
 
 export function MobileMenu() {

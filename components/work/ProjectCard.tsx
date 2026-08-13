@@ -9,16 +9,17 @@ import type { Project } from '@/lib/projects'
 
 export function ProjectCard({ project }: { project: Project }) {
   const reducedMotion = useReducedMotion()
-  const isComingSoon = project.status === 'coming-soon' && !project.url && project.gallery.length === 0
+  const showComingSoonBadge = project.status === 'coming-soon'
+  const isClickable = project.hasCaseStudy
 
   const content = (
     <div className="group relative overflow-hidden rounded-2xl border border-border bg-card">
       {project.featured && (
-        <span className="absolute left-4 top-4 z-10 rounded-full bg-accent px-3 py-1 text-xs font-medium text-white">
+        <span className="absolute left-4 top-4 z-10 rounded-full bg-accent-strong px-3 py-1 text-xs font-medium text-white">
           Featured Project
         </span>
       )}
-      {isComingSoon && (
+      {showComingSoonBadge && (
         <span className="absolute right-4 top-4 z-10 rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
           Coming Soon
         </span>
@@ -45,7 +46,7 @@ export function ProjectCard({ project }: { project: Project }) {
         </p>
         <h3 className="mt-2 text-2xl font-semibold">{project.title}</h3>
         <p className="mt-2 text-sm text-muted-foreground">{project.subtitle}</p>
-        {!isComingSoon && (
+        {isClickable && (
           <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-foreground">
             View project <ArrowUpRight className="h-4 w-4" />
           </span>
@@ -54,7 +55,7 @@ export function ProjectCard({ project }: { project: Project }) {
     </div>
   )
 
-  if (isComingSoon) {
+  if (!isClickable) {
     return <div className="opacity-60">{content}</div>
   }
 

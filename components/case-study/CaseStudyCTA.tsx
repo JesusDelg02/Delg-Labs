@@ -8,7 +8,7 @@ export function CaseStudyCTA({ project }: { project: Project }) {
       <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
         <Link
           href="/#contact"
-          className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-secondary"
+          className="rounded-full bg-accent-strong px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent"
         >
           Start a Project
         </Link>

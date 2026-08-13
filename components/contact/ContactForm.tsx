@@ -38,7 +38,7 @@ export function ContactForm() {
 
   if (status === 'success') {
     return (
-      <div className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-10 text-center">
+      <div role="status" className="flex flex-col items-center gap-3 rounded-2xl border border-border bg-card p-10 text-center">
         <CheckCircle2 className="h-8 w-8 text-accent" />
         <p className="text-foreground">
           Thanks — your project details were received. I&apos;ll get back to you soon.
@@ -49,16 +49,43 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
+      <input
+        type="text"
+        {...register('website')}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute left-[-9999px]"
+      />
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <Label htmlFor="name">Name</Label>
-          <Input id="name" {...register('name')} />
-          {errors.name && <p className="mt-1 text-xs text-destructive">{errors.name.message}</p>}
+          <Input
+            id="name"
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? 'name-error' : undefined}
+            {...register('name')}
+          />
+          {errors.name && (
+            <p id="name-error" role="alert" className="mt-1 text-xs text-destructive">
+              {errors.name.message}
+            </p>
+          )}
         </div>
         <div>
           <Label htmlFor="email">Email</Label>
-          <Input id="email" type="email" {...register('email')} />
-          {errors.email && <p className="mt-1 text-xs text-destructive">{errors.email.message}</p>}
+          <Input
+            id="email"
+            type="email"
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? 'email-error' : undefined}
+            {...register('email')}
+          />
+          {errors.email && (
+            <p id="email-error" role="alert" className="mt-1 text-xs text-destructive">
+              {errors.email.message}
+            </p>
+          )}
         </div>
       </div>
       <div>
@@ -89,8 +116,18 @@ export function ContactForm() {
       </div>
       <div>
         <Label htmlFor="message">Message</Label>
-        <Textarea id="message" rows={5} {...register('message')} />
-        {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message.message}</p>}
+        <Textarea
+          id="message"
+          rows={5}
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? 'message-error' : undefined}
+          {...register('message')}
+        />
+        {errors.message && (
+          <p id="message-error" role="alert" className="mt-1 text-xs text-destructive">
+            {errors.message.message}
+          </p>
+        )}
       </div>
       {status === 'error' && <p className="text-sm text-destructive">{errorMessage}</p>}
       <Button type="submit" size="lg" variant="primary" disabled={status === 'loading'}>

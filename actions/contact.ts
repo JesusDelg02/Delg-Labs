@@ -10,6 +10,10 @@ export async function submitContactForm(values: ContactFormValues): Promise<Cont
   if (!parsed.success) {
     return { success: false, error: 'Please check the form and try again.' }
   }
+  if (parsed.data.website) {
+    // Honeypot field — real users never see or fill it, bots typically do.
+    return { success: false, error: 'Something went wrong. Please try again later.' }
+  }
 
   const apiKey = process.env.RESEND_API_KEY
   if (!apiKey) {

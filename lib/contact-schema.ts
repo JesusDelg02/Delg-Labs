@@ -13,6 +13,7 @@ export const contactSchema = z.object({
     'Not sure yet',
   ]),
   message: z.string().min(10, 'Tell me a bit more — at least 10 characters'),
+  website: z.string().max(0).optional(),
 })
 
 export type ContactFormValues = z.infer<typeof contactSchema>

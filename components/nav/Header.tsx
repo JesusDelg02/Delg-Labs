@@ -4,11 +4,11 @@ import { variantClasses, sizeClasses } from '@/components/ui/button'
 import { MobileMenu } from './MobileMenu'
 
 const links = [
-  { href: '#work', label: 'Work' },
-  { href: '#services', label: 'Services' },
-  { href: '#about', label: 'About' },
-  { href: '#process', label: 'Process' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#work', label: 'Work' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#about', label: 'About' },
+  { href: '/#process', label: 'Process' },
+  { href: '/#contact', label: 'Contact' },
 ]
 
 export function Header() {
@@ -25,8 +25,8 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           className={cn(
             'hidden rounded-full font-medium transition-colors sm:inline-flex sm:items-center sm:justify-center',
             variantClasses.outline,
@@ -34,7 +34,7 @@ export function Header() {
           )}
         >
           Let&apos;s Work Together
-        </a>
+        </Link>
         <MobileMenu />
       </div>
     </header>

@@ -7,6 +7,7 @@ export interface Project {
   technologies: string[]
   featured: boolean
   status: 'live' | 'coming-soon'
+  hasCaseStudy: boolean
   image: string
   gallery: string[]
   challenge: string
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'OpenAI API'],
     featured: true,
     status: 'coming-soon',
+    hasCaseStudy: true,
     image: '/projects/tireos-dashboard.svg',
     gallery: ['/projects/tireos-dashboard.svg', '/projects/tireos-inventory.svg'],
     challenge:
@@ -46,6 +48,7 @@ export const projects: Project[] = [
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP'],
     featured: false,
     status: 'live',
+    hasCaseStudy: true,
     image: 'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjszuss.netlify.app%2F?w=800',
     gallery: [],
     challenge:
@@ -66,6 +69,7 @@ export const projects: Project[] = [
     technologies: [],
     featured: false,
     status: 'coming-soon',
+    hasCaseStudy: false,
     image: '/projects/coming-soon.svg',
     gallery: [],
     challenge: '',
