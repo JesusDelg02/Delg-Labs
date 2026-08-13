@@ -21,7 +21,7 @@ export async function submitContactForm(values: ContactFormValues): Promise<Cont
 
   try {
     const resend = new Resend(apiKey)
-    await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: 'Delg Labs <onboarding@resend.dev>',
       to: process.env.CONTACT_INBOX_EMAIL ?? 'hello@delglabs.com',
       replyTo: email,
@@ -36,6 +36,10 @@ export async function submitContactForm(values: ContactFormValues): Promise<Cont
         message,
       ].join('\n'),
     })
+    if (error) {
+      console.error('submitContactForm: Resend returned an error', error)
+      return { success: false, error: 'Something went wrong. Please try again later.' }
+    }
     return { success: true }
   } catch (err) {
     console.error('submitContactForm: Resend call failed', err)
