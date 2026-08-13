@@ -43,3 +43,6 @@ next-env.d.ts
 
 # superpowers workspace (multi-agent build system)
 .superpowers/
+
+# Local Netlify folder
+.netlify

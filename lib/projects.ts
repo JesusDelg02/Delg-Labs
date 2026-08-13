@@ -43,25 +43,24 @@ export const projects: Project[] = [
     url: undefined,
   },
   {
-    slug: 'jszuss',
-    title: 'Jszuss',
-    subtitle: 'Immersive Business Website',
+    slug: 'miller-multi-service',
+    title: 'Miller Multi Service',
+    subtitle: 'Bilingual redesign for a Miami tire shop',
     description:
-      'A highly interactive 3D web experience for a web-design and AI-receptionist studio — scroll-driven 3D hero, GSAP-choreographed parallax and tilt, built to make a business stand out from a template site.',
-    category: ['Web Design', '3D', 'Frontend', 'Interactive Experience'],
-    technologies: ['React', 'Vite', 'Tailwind CSS', 'Three.js', 'React Three Fiber', 'GSAP'],
+      'A bilingual redesign for a Miami tire, battery, and alignment shop — replacing a dated, English-only template site with a fast, modern one-page site that leads with clear services, hours, and walk-in/same-day messaging.',
+    category: ['Web Design', 'Local Business', 'Bilingual', 'Frontend'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     featured: false,
     status: 'live',
     hasCaseStudy: true,
-    image: 'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fjszuss.netlify.app%2F?w=800',
+    image: 'https://s.wordpress.com/mshots/v1/https%3A%2F%2Fstately-lokum-37512b.netlify.app%2F?w=800',
     gallery: [],
     challenge:
-      'A web-design studio\'s own website is a credibility test — it has to prove the studio can build the exact kind of high-end, technically ambitious site it sells to clients.',
+      'Miller Multi Service was running on a dated, English-only template site — cluttered layout, no clear service pricing, and no way to reach Spanish-speaking customers.',
     solution:
-      'Built a single-page site with a scroll- and pointer-driven Three.js hero (a wireframe icosahedron reacting to both), GSAP ScrollTrigger parallax between the 3D layer and the foreground copy, and tilt-on-hover service cards — all gated behind a `prefers-reduced-motion` check and a static fallback on mobile so the effects never cost a real visitor a usable page.',
-    results:
-      'Live production site with a real client case study built in (a bilingual tire-shop redesign), running on Netlify.',
-    url: 'https://jszuss.netlify.app',
+      'Rebuilt as a fast, bilingual (English/Spanish) one-page site that leads with clear services, walk-in hours, and same-day service — the things customers actually decide on.',
+    results: 'Real client project, live in production.',
+    url: 'https://stately-lokum-37512b.netlify.app/',
   },
   {
     slug: 'ai-automation',

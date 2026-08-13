@@ -7,17 +7,19 @@ import { CaseStudySection } from '@/components/case-study/CaseStudySection'
 import { CaseStudyCTA } from '@/components/case-study/CaseStudyCTA'
 
 export const metadata: Metadata = {
-  title: 'Jszuss — Delg Labs',
+  title: 'Miller Multi Service — Delg Labs',
   description:
-    'A scroll- and pointer-driven 3D web experience built for a web-design and AI-receptionist studio.',
+    'A bilingual redesign for a Miami tire, battery, and alignment shop — before and after.',
 }
 
 function sitePreviewUrl(url: string, width = 800) {
   return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=${width}`
 }
 
-export default function JszussPage() {
-  const project = getProjectBySlug('jszuss')
+const BEFORE_URL = 'https://millermultiservice.com/'
+
+export default function MillerMultiServicePage() {
+  const project = getProjectBySlug('miller-multi-service')
   if (!project) notFound()
 
   const jsonLd = {
@@ -43,29 +45,35 @@ export default function JszussPage() {
       </CaseStudySection>
       <section className="mx-auto max-w-5xl px-6 py-12">
         <div className="grid gap-6 sm:grid-cols-2">
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-border">
-            {project.url && (
+          <div>
+            <p className="mb-3 text-sm font-medium uppercase tracking-wide text-muted-foreground">
+              Before
+            </p>
+            <div className="relative aspect-video overflow-hidden rounded-2xl border border-border">
               <Image
-                src={sitePreviewUrl(project.url)}
-                alt="Jszuss desktop screenshot"
+                src={sitePreviewUrl(BEFORE_URL)}
+                alt="Miller Multi Service — old site"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 unoptimized
               />
-            )}
+            </div>
           </div>
-          <div className="relative mx-auto aspect-[9/16] w-56 overflow-hidden rounded-2xl border border-border sm:mx-0">
-            {project.url && (
-              <Image
-                src={sitePreviewUrl(project.url, 400)}
-                alt="Jszuss mobile screenshot"
-                fill
-                className="object-cover object-top"
-                sizes="224px"
-                unoptimized
-              />
-            )}
+          <div>
+            <p className="mb-3 text-sm font-medium uppercase tracking-wide text-accent">After</p>
+            <div className="relative aspect-video overflow-hidden rounded-2xl border border-accent/30">
+              {project.url && (
+                <Image
+                  src={sitePreviewUrl(project.url)}
+                  alt="Miller Multi Service — new site"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
+                />
+              )}
+            </div>
           </div>
         </div>
       </section>
