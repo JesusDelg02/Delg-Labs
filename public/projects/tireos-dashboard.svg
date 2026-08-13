@@ -1,0 +1,22 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#09090B"/>
+  <rect x="40" y="40" width="1120" height="80" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="70" y="90" fill="#FAFAFA" font-family="sans-serif" font-size="24" font-weight="600">TireOS</text>
+  <rect x="40" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="65" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Revenue</text>
+  <text x="65" y="230" fill="#3B82F6" font-family="sans-serif" font-size="32" font-weight="700">$48,210</text>
+  <rect x="330" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="355" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Appointments</text>
+  <text x="355" y="230" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="700">86</text>
+  <rect x="620" y="140" width="270" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="645" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Inventory</text>
+  <text x="645" y="230" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="700">1,204</text>
+  <rect x="910" y="140" width="250" height="140" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="935" y="180" fill="#A1A1AA" font-family="sans-serif" font-size="14">Profit</text>
+  <text x="935" y="230" fill="#22C55E" font-family="sans-serif" font-size="32" font-weight="700">$12,860</text>
+  <rect x="40" y="310" width="1120" height="260" rx="12" fill="#18181B" stroke="#27272A"/>
+  <text x="65" y="345" fill="#A1A1AA" font-family="sans-serif" font-size="14">AI Insights</text>
+  <text x="65" y="380" fill="#FAFAFA" font-family="sans-serif" font-size="16">3 customers are due for tire rotation this week</text>
+  <text x="65" y="410" fill="#FAFAFA" font-family="sans-serif" font-size="16">Brand X tires trending 18% above forecast — reorder suggested</text>
+  <text x="65" y="440" fill="#FAFAFA" font-family="sans-serif" font-size="16">Saturday appointments 92% booked</text>
+</svg>
