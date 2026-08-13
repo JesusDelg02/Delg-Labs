@@ -27,7 +27,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <motion.div
           whileHover={reducedMotion ? undefined : { scale: 1.04 }}
           transition={{ duration: 0.4, ease: 'easeOut' }}
-          className="h-full w-full"
+          className="relative h-full w-full"
         >
           <Image
             src={project.image}
