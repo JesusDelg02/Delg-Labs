@@ -9,7 +9,6 @@ import type { Project } from '@/lib/projects'
 
 export function ProjectCard({ project }: { project: Project }) {
   const reducedMotion = useReducedMotion()
-  const showComingSoonBadge = project.status === 'coming-soon'
   const isClickable = project.hasCaseStudy
 
   const content = (
@@ -17,11 +16,6 @@ export function ProjectCard({ project }: { project: Project }) {
       {project.featured && (
         <span className="absolute left-4 top-4 z-10 rounded-full bg-accent-strong px-3 py-1 text-xs font-medium text-white">
           Featured Project
-        </span>
-      )}
-      {showComingSoonBadge && (
-        <span className="absolute right-4 top-4 z-10 rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          Concept
         </span>
       )}
       <div className="relative h-56 w-full overflow-hidden sm:h-72">
