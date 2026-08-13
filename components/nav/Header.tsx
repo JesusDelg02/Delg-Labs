@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { variantClasses, sizeClasses } from '@/components/ui/button'
 import { MobileMenu } from './MobileMenu'
@@ -15,8 +16,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
       <div className="relative mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-semibold tracking-tight">
-          Delg Labs
+        <Link href="/" className="flex items-center">
+          <Image src="/logo.svg" alt="Delg Labs" width={140} height={32} className="h-7 w-auto" priority />
         </Link>
         <nav className="hidden gap-8 text-sm text-muted-foreground sm:flex">
           {links.map((link) => (
