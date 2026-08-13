@@ -21,7 +21,7 @@ export function ProjectCard({ project }: { project: Project }) {
       )}
       {showComingSoonBadge && (
         <span className="absolute right-4 top-4 z-10 rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          Coming Soon
+          Concept
         </span>
       )}
       <div className="relative h-56 w-full overflow-hidden sm:h-72">
