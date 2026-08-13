@@ -1,0 +1,57 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F1F26"/>
+      <stop offset="100%" stop-color="#18181B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#09090B"/>
+  <rect x="40" y="40" width="1120" height="56" rx="12" fill="url(#cardGrad3)" stroke="#27272A"/>
+  <circle cx="66" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="86" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="106" cy="68" r="5" fill="#3F3F46"/>
+  <text x="600" y="73" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="16" font-weight="600">Appointments — This Week</text>
+
+  <rect x="40" y="112" width="1120" height="470" rx="12" fill="url(#cardGrad3)" stroke="#27272A"/>
+
+  <g font-family="sans-serif" font-size="13" fill="#A1A1AA">
+    <text x="150" y="150" text-anchor="middle">Mon</text>
+    <text x="310" y="150" text-anchor="middle">Tue</text>
+    <text x="470" y="150" text-anchor="middle">Wed</text>
+    <text x="630" y="150" text-anchor="middle">Thu</text>
+    <text x="790" y="150" text-anchor="middle">Fri</text>
+    <text x="950" y="150" text-anchor="middle">Sat</text>
+  </g>
+  <line x1="70" y1="166" x2="1130" y2="166" stroke="#27272A"/>
+
+  <rect x="86" y="188" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="151" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Tire rotation · 9am</text>
+
+  <rect x="246" y="188" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="311" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Alignment · 9am</text>
+
+  <rect x="246" y="234" width="130" height="34" rx="6" fill="#3F3F46"/>
+  <text x="311" y="255" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">New tires · 11am</text>
+
+  <rect x="406" y="188" width="130" height="34" rx="6" fill="#3F3F46"/>
+  <text x="471" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Brake check · 10am</text>
+
+  <rect x="566" y="188" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="631" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Tire rotation · 9am</text>
+
+  <rect x="566" y="234" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="631" y="255" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Battery · 1pm</text>
+
+  <rect x="726" y="188" width="130" height="34" rx="6" fill="#3F3F46"/>
+  <text x="791" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">New tires · 9am</text>
+
+  <rect x="886" y="188" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="951" y="209" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Alignment · 9am</text>
+  <rect x="886" y="234" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="951" y="255" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Rotation · 10am</text>
+  <rect x="886" y="280" width="130" height="34" rx="6" fill="#1D4ED8" opacity="0.85"/>
+  <text x="951" y="301" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="12">Alignment · 11am</text>
+
+  <line x1="70" y1="500" x2="1130" y2="500" stroke="#27272A"/>
+  <text x="70" y="540" fill="#71717A" font-family="sans-serif" font-size="13">Saturday is 92% booked — AI suggests opening a second bay</text>
+</svg>

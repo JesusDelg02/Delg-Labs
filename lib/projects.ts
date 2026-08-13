@@ -29,7 +29,11 @@ export const projects: Project[] = [
     status: 'coming-soon',
     hasCaseStudy: true,
     image: '/projects/tireos-dashboard.svg',
-    gallery: ['/projects/tireos-dashboard.svg', '/projects/tireos-inventory.svg'],
+    gallery: [
+      '/projects/tireos-inventory.svg',
+      '/projects/tireos-customers.svg',
+      '/projects/tireos-appointments.svg',
+    ],
     challenge:
       'Tire shops run their business across disconnected tools — a paper ticket system for appointments, a separate point of sale, a spreadsheet for inventory, and a phone that rings constantly for things the business itself already knows the answer to.',
     solution:
@@ -64,17 +68,20 @@ export const projects: Project[] = [
     title: 'AI Business Automation',
     subtitle: 'Reducing repetitive work, one workflow at a time',
     description:
-      'An automation system designed to reduce repetitive work and help businesses respond to customers faster.',
+      'A concept for an AI-powered automation layer that watches for repetitive business tasks — new leads, missed calls, follow-up emails — and handles them automatically, so nothing falls through the cracks.',
     category: ['AI', 'Automation'],
-    technologies: [],
+    technologies: ['Next.js', 'TypeScript', 'OpenAI API', 'Webhooks', 'Workflow engine'],
     featured: false,
     status: 'coming-soon',
-    hasCaseStudy: false,
-    image: '/projects/coming-soon.svg',
+    hasCaseStudy: true,
+    image: '/projects/ai-automation-workflow.svg',
     gallery: [],
-    challenge: '',
-    solution: '',
-    results: '',
+    challenge:
+      'Small businesses lose leads and slow down responses because follow-ups, qualification, and scheduling all depend on someone remembering to do them by hand.',
+    solution:
+      'An automation system that listens for triggers — a new form submission, a missed call, an unanswered email — and runs a defined workflow: qualify the lead, draft a reply, book a slot on the calendar. Response time stops depending on who happens to be free.',
+    results:
+      'Designed and prototyped as a concept: a workflow-builder interface and a sample automation run, not a shipped product with live customers.',
     url: undefined,
   },
 ]

@@ -1,0 +1,61 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F1F26"/>
+      <stop offset="100%" stop-color="#18181B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#09090B"/>
+  <rect x="40" y="40" width="1120" height="56" rx="12" fill="url(#cardGrad2)" stroke="#27272A"/>
+  <circle cx="66" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="86" cy="68" r="5" fill="#3F3F46"/>
+  <circle cx="106" cy="68" r="5" fill="#3F3F46"/>
+  <text x="600" y="73" text-anchor="middle" fill="#FAFAFA" font-family="sans-serif" font-size="16" font-weight="600">Customers</text>
+
+  <rect x="40" y="112" width="1120" height="450" rx="12" fill="url(#cardGrad2)" stroke="#27272A"/>
+  <g font-family="sans-serif" font-size="14" fill="#A1A1AA">
+    <text x="70" y="152">Name</text>
+    <text x="360" y="152">Phone</text>
+    <text x="580" y="152">Vehicle</text>
+    <text x="820" y="152">Last Service</text>
+    <text x="1040" y="152">Status</text>
+  </g>
+  <line x1="70" y1="172" x2="1130" y2="172" stroke="#27272A"/>
+
+  <g font-family="sans-serif" font-size="15" fill="#FAFAFA">
+    <circle cx="80" cy="206" r="14" fill="#27272A" stroke="#3F3F46"/>
+    <text x="105" y="212">Maria Santos</text>
+    <text x="360" y="212">(305) 555-0148</text>
+    <text x="580" y="212">2019 Honda Civic</text>
+    <text x="820" y="212">14 days ago</text>
+    <circle cx="1050" cy="207" r="4" fill="#FBBF24"/>
+    <text x="1064" y="212" fill="#A1A1AA" font-size="13">Due soon</text>
+
+    <circle cx="80" cy="256" r="14" fill="#27272A" stroke="#3F3F46"/>
+    <text x="105" y="262">James Whitfield</text>
+    <text x="360" y="262">(305) 555-0172</text>
+    <text x="580" y="262">2021 Ford F-150</text>
+    <text x="820" y="262">2 days ago</text>
+    <circle cx="1050" cy="257" r="4" fill="#4ADE80"/>
+    <text x="1064" y="262" fill="#A1A1AA" font-size="13">Up to date</text>
+
+    <circle cx="80" cy="306" r="14" fill="#27272A" stroke="#3F3F46"/>
+    <text x="105" y="312">Aisha Karim</text>
+    <text x="360" y="312">(305) 555-0199</text>
+    <text x="580" y="312">2018 Toyota Camry</text>
+    <text x="820" y="312">31 days ago</text>
+    <circle cx="1050" cy="307" r="4" fill="#F87171"/>
+    <text x="1064" y="312" fill="#A1A1AA" font-size="13">Overdue</text>
+
+    <circle cx="80" cy="356" r="14" fill="#27272A" stroke="#3F3F46"/>
+    <text x="105" y="362">Devon Marsh</text>
+    <text x="360" y="362">(305) 555-0113</text>
+    <text x="580" y="362">2020 Jeep Wrangler</text>
+    <text x="820" y="362">6 days ago</text>
+    <circle cx="1050" cy="357" r="4" fill="#4ADE80"/>
+    <text x="1064" y="362" fill="#A1A1AA" font-size="13">Up to date</text>
+  </g>
+
+  <line x1="70" y1="392" x2="1130" y2="392" stroke="#27272A"/>
+  <text x="70" y="430" fill="#71717A" font-family="sans-serif" font-size="13">214 total customers · 3 flagged for follow-up</text>
+</svg>
